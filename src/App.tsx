@@ -76,12 +76,12 @@ function App() {
             </div>
             <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                <img 
-                 src="https://github-readme-stats.vercel.app/api?username=mannuojha2003&show_icons=true&theme=dark&bg_color=0b0f1a&title_color=38bdf8&icon_color=38bdf8&text_color=9ca3af" 
+                 src="https://github-readme-stats-eight-theta.vercel.app/api?username=mannuojha2003&show_icons=true&theme=dark&bg_color=0b0f1a&title_color=38bdf8&icon_color=38bdf8&text_color=9ca3af" 
                  alt="Mannu's GitHub Stats" 
                  className="rounded-xl border border-gray-800 shadow-2xl h-full"
                />
                <img 
-                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=mannuojha2003&layout=compact&theme=dark&bg_color=0b0f1a&title_color=38bdf8&text_color=9ca3af" 
+                 src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=mannuojha2003&layout=compact&theme=dark&bg_color=0b0f1a&title_color=38bdf8&text_color=9ca3af" 
                  alt="Top Languages" 
                  className="rounded-xl border border-gray-800 shadow-2xl h-full"
                />
