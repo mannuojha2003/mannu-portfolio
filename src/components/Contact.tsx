@@ -62,10 +62,16 @@ const Contact: React.FC = () => {
             className="bg-[#0b0f1a] border border-gray-800 rounded-2xl p-8 shadow-2xl"
           >
             <h3 className="text-xl font-bold mb-6">Send Message</h3>
-            <form className="space-y-4">
+            <form 
+              action={`https://formspree.io/f/${data.personal.email}`} // They will need to replace this with a real Formspree ID
+              method="POST"
+              className="space-y-4"
+            >
               <div>
                 <input 
                   type="text" 
+                  name="name"
+                  required
                   placeholder="Your Name" 
                   className="w-full bg-secondary/30 border border-gray-800 rounded-lg px-4 py-3 text-sm focus:border-accent outline-none transition-all"
                 />
@@ -73,19 +79,23 @@ const Contact: React.FC = () => {
               <div>
                 <input 
                   type="email" 
+                  name="email"
+                  required
                   placeholder="Your Email" 
                   className="w-full bg-secondary/30 border border-gray-800 rounded-lg px-4 py-3 text-sm focus:border-accent outline-none transition-all"
                 />
               </div>
               <div>
                 <textarea 
+                  name="message"
+                  required
                   rows={4} 
                   placeholder="Your Message" 
                   className="w-full bg-secondary/30 border border-gray-800 rounded-lg px-4 py-3 text-sm focus:border-accent outline-none transition-all resize-none"
                 ></textarea>
               </div>
               <button 
-                type="button"
+                type="submit"
                 className="w-full py-4 bg-accent text-primary font-bold rounded-lg hover:bg-white transition-colors"
               >
                 Send Message
