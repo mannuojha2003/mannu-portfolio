@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# 🚀 Premium Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, interactive, and fully responsive developer portfolio built with a modern tech stack. Designed with a premium dark-mode aesthetic, featuring terminal-inspired elements, dynamic animations, and live data integration.
 
-Currently, two official plugins are available:
+**🌐 Live Demo:** [https://mannu-portfolio-tan.vercel.app](https://mannu-portfolio-tan.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🖱️ **Interactive Cursor Glow**: Dynamic mouse-tracking spotlight for an immersive experience.
+- 🌌 **Ambient Background**: Smooth, canvas-driven particle system for depth and motion.
+- 💻 **Terminal Hero**: A "whoami" interactive terminal introduction showcasing personality and stack.
+- 📊 **Live GitHub Activity**: Real-time stats and language breakdown cards.
+- 📱 **Fully Responsive**: Mobile-first design with a custom animated hamburger menu.
+- 🌗 **Premium Dark Theme**: Curated neon-blue accents with high-end typography and glassmorphism.
+- 📈 **SEO Optimized**: Meta descriptions and semantic HTML for maximum search visibility.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+
+```text
+src/
+├── components/     # Reusable UI components (Navbar, Hero, Modals, etc.)
+├── data/           # Single source of truth (data.json)
+├── assets/         # Static images and icons
+├── styles/         # Global styles and Tailwind configurations
+└── App.tsx         # Main application assembly
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the repository
+```bash
+git clone https://github.com/mannuojha2003/mannu-portfolio.git
+cd mannu-portfolio
 ```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run development server
+```bash
+npm run dev
+```
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 📝 Customization
+
+To personalize this portfolio, simply update the `src/data/data.json` file with your own information, projects, and experience. The site will automatically reflect the changes across all components.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mannuojha2003/mannu-portfolio/issues).
+
+---
+
+**Driven by curiosity, powered by code.**  
+Built by [Mannu Kumar Ojha](https://github.com/mannuojha2003)
