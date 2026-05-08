@@ -1,0 +1,83 @@
+{
+  "personal": {
+    "name": "Mannu Kumar Ojha",
+    "location": "Vizag, Andhra Pradesh, India",
+    "phone": "+91-7382968895",
+    "email": "ojhamannu11@gmail.com",
+    "tagline": "Full-Stack Developer • Tech Enthusiast • Problem Solver",
+    "overview": "Driven by curiosity and a hands-on approach, I am pursuing a Bachelor’s degree in technology focusing on computer science. My experience spans full-stack development, research internships, and design, with proficiency in Python, JavaScript, and web technologies. I thrive on solving real-world problems creatively and collaboratively."
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/deployorcry",
+    "behance": "https://www.behance.net/mannukumarojha2024",
+    "github": "https://github.com/mannuojha2003",
+    "instagram": "https://www.instagram.com/mannu._.ojha?igsh=MWxjdXF1dXVreDdlaQ=="
+  },
+  "education": [
+    {
+      "institution": "Jaypee University of Engineering and Technology, Guna, MP",
+      "degree": "B.Tech in Computer Science",
+      "duration": "07/2022 – 05/2026",
+      "score": "CGPA: 5.0"
+    },
+    {
+      "institution": "Kendriya Vidyalaya No. 1, Vizag, AP",
+      "degree": "PCM + CS",
+      "duration": "06/2019 – 05/2021",
+      "score": "Percentage: 85.8%"
+    }
+  ],
+  "skills": {
+    "Languages": ["Python", "JavaScript", "TypeScript", "SQL", "XML"],
+    "FrameworksTools": ["ReactJS", "Node.js", "Express", "MongoDB", "Mongoose", "Tailwind CSS", "JWT", "Git"],
+    "DeveloperTools": ["VS Code", "Anaconda"]
+  },
+  "projects": [
+    {
+      "title": "Role-Based Business Dashboard",
+      "techStack": ["React", "Node.js", "MongoDB", "TypeScript", "Tailwind (Vite)", "Express", "Mongoose", "JWT"],
+      "description": "Full-stack dashboard managing quotations, invoices, units, schedules, and users with JWT-based role access. Features CRUD operations, interactive tables with auto-calculated totals, secure authentication, and a responsive dark mode.",
+      "github_url": "https://github.com/mannuojha2003/my-dashboard-app"
+    },
+    {
+      "title": "pta-bot WhatsApp Automation",
+      "techStack": ["Node.js", "Python", "pandas"],
+      "description": "Bot captures WhatsApp group messages, parses structured data using Python, and saves to Excel for tracking. Handles partial/missing data, supports multiple groups, and is designed for extensions.",
+      "github_url": "https://github.com/mannuojha2003/whatsapp_bot"
+    },
+    {
+      "title": "ARIES Integration Tool",
+      "techStack": ["Python", "pandas", "numpy"],
+      "description": "Scientific tool developed for atmospheric research to integrate radiation data over specific wavelength ranges using the trapezoidal rule. Processes .out files and generates structured Excel reports.",
+      "github_url": "https://github.com/mannuojha2003/ARIES"
+    }
+  ],
+  "internships": [
+    {
+      "organization": "Aryabhatta Research Institute of Observational Sciences, Nainital, UK",
+      "role": "Intern",
+      "duration": "06/2024 – 07/2024",
+      "description": "Instrumentation and Software Development in High Energy Pulse LiDAR; integrated hardware and software tools for atmospheric research."
+    }
+  ],
+  "relevant_courses": [
+    "Data Structures & Algorithms",
+    "Operating Systems",
+    "DBMS",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Full Stack Web Development"
+  ],
+  "extracurricular": [
+    {
+      "organization": "JUET Youth Club",
+      "role": "Graphic Designer",
+      "duration": "12/2022 – 03/2025",
+      "description": "Video editing, posters, and banners."
+    }
+  ],
+  "certifications": [
+    "Data Structures (Intermediate) – Infosys Springboard",
+    "Python for Machine Learning (Intermediate) – Infosys Springboard"
+  ]
+}

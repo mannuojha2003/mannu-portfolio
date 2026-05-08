@@ -1,0 +1,41 @@
+Mannu Kumar Ojha
+Vizag, Andhra Pradesh, India
+♂phone+91-7382968895 /envel⌢peojhamannu11@gmail.com /linkedinMannu Ojha /githubmannuojha2003
+OVERVIEW
+Driven by curiosity and a hands-on approach, I am pursuing a Bachelor’s degree in technology focusing on computer science.
+My experience spans full-stack development, research internships, and design, with proficiency in Python, JavaScript, and web
+technologies. I thrive on solving real-world problems creatively and collaboratively.
+EDUCATION
+Jaypee University of Engineering and Technology , Guna, MP 07/2022 – 05/2026
+B.Tech in Computer Science CGPA: 5.0
+Kendriya Vidyalaya No. 1 , Vizag, AP 06/2019 – 05/2021
+PCM + CS Percentage: 85.8%
+PROJECTS
+Role-Based Business Dashboard (React, Node.js, MongoDB)
+Full-stack dashboard managing quotations, invoices, units, schedules, and users with JWT-based role access.
+•Frontend: React + TypeScript + Tailwind (Vite); Backend: Node.js, Express, MongoDB/Mongoose.
+•Secure JWT authentication with admin/employee roles; dynamic sidebar and protected routes.
+•Features: CRUD units, interactive tables with auto-calculated totals, to-dos, user profiles.
+•Ensured responsive design with dark mode; resolved token and data sync issues.
+pta-bot WhatsApp Automation (Node.js, Python)
+Bot captures WhatsApp group messages, parses structured data, and saves to Excel for tracking.
+•Uses open-wa to watch groups; Node.js calls Python parser (pandas) to save parsed data.
+•Handles partial/missing data; supports multiple groups.
+•Designed for extensions: report scheduling, admin-only groups, web dashboard, cloud storage.
+INTERNSHIP
+Aryabhatta Research Institute of Observational Sciences , Nainital, UK 06/2024 – 07/2024
+Instrumentation and Software Development in High Energy Pulse LiDAR; integrated hardware and software tools for atmo-
+spheric research.
+TECHNICAL SKILLS
+Languages: Python, JavaScript, TypeScript, SQL, XML
+Frameworks/Tools: ReactJS, Node.js, Express, MongoDB, Mongoose, Tailwind CSS, JWT, Git
+Developer Tools: VS Code, Anaconda
+RELEVANT COURSES
+Data Structures & Algorithms ·Operating Systems ·DBMS ·Machine Learning
+Artificial Intelligence ·Full Stack Web Development
+EXTRACURRICULAR
+JUET Youth Club — Graphic Designer 12/2022 – 03/2025
+Video editing, posters, and banners.
+CERTIFICATIONS
+•Data Structures (Intermediate) – Infosys Springboard
+•Python for Machine Learning (Intermediate) – Infosys Springboard
