@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-green-500/50" />
               <div className="ml-4 text-xs font-mono text-gray-500">zsh — mannu@portfolio</div>
             </div>
-            <div className="p-6 font-mono text-sm md:text-base leading-relaxed">
+            <div className="p-4 md:p-6 font-mono text-[10px] sm:text-xs md:text-base leading-relaxed">
               <div className="flex">
                 <span className="text-green-400 mr-2">➜</span>
                 <span className="text-accent mr-2">~</span>
