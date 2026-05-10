@@ -12,6 +12,133 @@
   color-scheme: dark;
 }
 
+body {
+  @apply bg-primary text-white font-sans antialiased relative;
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(0, 240, 255, 0.05) 25%, rgba(0, 240, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.05) 75%, rgba(0, 240, 255, 0.05) 76%, transparent 77%, transparent), 
+    linear-gradient(90deg, transparent 24%, rgba(0, 240, 255, 0.05) 25%, rgba(0, 240, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.05) 75%, rgba(0, 240, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 40px 40px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 240, 255, 0.05) 2px,
+    rgba(0, 240, 255, 0.05) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
+.glitch {
+  position: relative;
+  color: white;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #050505;
+}
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #FF003C;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 #00F0FF;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(10px, 9999px, 83px, 0); }
+  20% { clip: rect(61px, 9999px, 15px, 0); }
+  40% { clip: rect(32px, 9999px, 4px, 0); }
+  60% { clip: rect(78px, 9999px, 87px, 0); }
+  80% { clip: rect(1px, 9999px, 54px, 0); }
+  100% { clip: rect(92px, 9999px, 21px, 0); }
+}
+@keyframes glitch-anim2 {
+  0% { clip: rect(65px, 9999px, 100px, 0); }
+  20% { clip: rect(3px, 9999px, 43px, 0); }
+  40% { clip: rect(89px, 9999px, 66px, 0); }
+  60% { clip: rect(12px, 9999px, 93px, 0); }
+  80% { clip: rect(54px, 9999px, 2px, 0); }
+  100% { clip: rect(33px, 9999px, 78px, 0); }
+}
+
+.cyber-button {
+  @apply relative inline-block px-8 py-3 font-bold uppercase tracking-widest text-black bg-cyber-yellow overflow-hidden transition-all duration-300;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+}
+.cyber-button:hover {
+  @apply bg-accent text-black;
+  box-shadow: 0 0 20px #00F0FF;
+}
+
+.cyber-button-alt {
+  @apply relative inline-block px-8 py-3 font-bold uppercase tracking-widest text-white border-2 border-cyber-pink overflow-hidden transition-all duration-300;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+}
+.cyber-button-alt:hover {
+  @apply bg-cyber-pink text-white;
+  box-shadow: 0 0 20px #FF003C;
+}
+
+.cyber-card {
+  @apply bg-[#0a0a0a] border border-accent/20 transition-all duration-300 relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+}
+.cyber-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: #00F0FF;
+  opacity: 0.5;
+}
+.cyber-card:hover {
+  @apply border-accent;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  animation: card-glitch 0.2s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes card-glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 1px) }
+  40% { transform: translate(-1px, -1px) }
+  60% { transform: translate(2px, 1px) }
+  80% { transform: translate(1px, -1px) }
+  100% { transform: translate(0) }
+}
+
+.cyber-card:hover::after {
+  opacity: 1;
+  background: #FF003C;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

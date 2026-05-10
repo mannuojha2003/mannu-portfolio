@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               onClick={() => setSelectedProject(project)}
-              className="bg-[#0b0f1a] border border-gray-800 rounded-2xl overflow-hidden hover:border-accent/30 transition-all flex flex-col group cursor-pointer"
+              className="cyber-card flex flex-col group cursor-pointer"
             >
               <div className="p-8 flex-grow">
                 <h3 className="text-xl font-bold mb-3 text-white group-hover:text-accent transition-colors">

@@ -16,48 +16,60 @@ const BackgroundParticles: React.FC = () => {
     class Particle {
       x: number;
       y: number;
-      size: number;
+      width: number;
+      height: number;
       speedX: number;
-      speedY: number;
-      opacity: number;
+      color: string;
+      life: number;
+      maxLife: number;
 
       constructor() {
         this.x = Math.random() * canvas!.width;
         this.y = Math.random() * canvas!.height;
-        this.size = Math.random() * 2;
-        this.speedX = Math.random() * 0.5 - 0.25;
-        this.speedY = Math.random() * 0.5 - 0.25;
-        this.opacity = Math.random() * 0.5;
+        this.width = Math.random() * 150 + 10;
+        this.height = Math.random() * 4 + 1;
+        this.speedX = (Math.random() - 0.5) * 30; // Fast horizontal movement
+        
+        const colors = ['#00F0FF', '#FF003C', '#FCEE0A', '#111111'];
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        
+        this.maxLife = Math.random() * 50 + 10;
+        this.life = this.maxLife;
       }
 
       update() {
         this.x += this.speedX;
-        this.y += this.speedY;
+        this.life--;
 
-        if (this.x > canvas!.width) this.x = 0;
-        else if (this.x < 0) this.x = canvas!.width;
-        if (this.y > canvas!.height) this.y = 0;
-        else if (this.y < 0) this.y = canvas!.height;
+        if (this.x > canvas!.width) this.x = -this.width;
+        else if (this.x + this.width < 0) this.x = canvas!.width;
+        
+        if (this.life <= 0) {
+          this.x = Math.random() * canvas!.width;
+          this.y = Math.random() * canvas!.height;
+          this.life = this.maxLife;
+        }
       }
 
       draw() {
-        ctx!.fillStyle = `rgba(56, 189, 248, ${this.opacity})`;
-        ctx!.beginPath();
-        ctx!.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx!.fill();
+        ctx!.fillStyle = this.color;
+        ctx!.globalAlpha = this.life / this.maxLife * 0.7; // Fade out
+        ctx!.fillRect(this.x, this.y, this.width, this.height);
+        ctx!.globalAlpha = 1.0;
       }
     }
 
     const init = () => {
       particles = [];
-      const numberOfParticles = (canvas.width * canvas.height) / 15000;
+      const numberOfParticles = (canvas.width * canvas.height) / 10000;
       for (let i = 0; i < numberOfParticles; i++) {
         particles.push(new Particle());
       }
     };
 
     const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'rgba(5, 5, 5, 0.2)'; // Trailing effect
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
       particles.forEach((particle) => {
         particle.update();
         particle.draw();
